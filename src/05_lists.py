@@ -42,6 +42,5 @@ print("- The length of x is:", len(x))
 
 for i in x:
     multi = i * 100
-    
-print("- Using a for loop", multi)
+    print("- Using a for loop", multi)
 # print(list(range(1,22)))
