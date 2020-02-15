@@ -36,8 +36,11 @@ waypoints = [
 # Add a new waypoint to the list
 # YOUR CODE HERE
 
-for e in (waypoints):
-    waypoints.append("new?")
+lesliesPlace = {"lat": 25, "lon": -122, "name": "Leslie's Place!"}
+
+waypoints.append(lesliesPlace)
+
+print(waypoints[0])
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
@@ -45,6 +48,12 @@ for e in (waypoints):
 # waypoints list.
 
 # YOUR CODE HERE
+
+waypoints[0] = {"lat": 43,
+                "lon": -121, 
+                "name": "not a real place "}
+print(waypoints)
+# I don't think this is the best way to do this because I would have to know and reinsert the other key value pairs unless I can find something like the spread operator.....
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
