@@ -13,9 +13,9 @@
 
 def is_even(e):
     if (e % 2 == 0):
-        print("Even!")
+        print("Even! 🔥")
     else:
-        print("She's ODD")
+        print("She's ODD 😎")
 
 
-is_even(5)
+is_even(7)
