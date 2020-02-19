@@ -24,13 +24,14 @@ def outer():
 
     def inner():
         y = 999
+        print(y)
 
     inner()
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999?
     # Note: Google "python nested function scope".
-    print(y)
+    # Move the print(y) into the scope of the inner() function so it prints that value once the value of y is reassigned 
 
 
 outer()
