@@ -20,3 +20,6 @@ Functional Arguments
 
 - Keyword Arguments
     an argument preceded by an identifier (e.g. name=) in a function call or passed as a value in a dictionary preceded by **.
+
+- Default Arguments
+  
