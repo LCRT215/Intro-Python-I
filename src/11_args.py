@@ -42,11 +42,15 @@ print("Function 2:", f2(*a))    # Should print 22
 # YOUR CODE HERE
 
 
-# def f3(*args):
+def f3(a,b=0):
+    if b == 0:
+        return a+1
+    else:
+        return a+b
 
 
-# print(f3(1, 2))  # Should print 3
-# print(f3(8))     # Should print 9
+print(f3(1, 2))  # Should print 3
+print(f3(8))     # Should print 9
 
 # Write a function f4 that accepts an arbitrary number of keyword arguments and
 # prints out the keys and values like so:
