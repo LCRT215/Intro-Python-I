@@ -30,3 +30,25 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+
+userInput = input(
+    "Enter a comma-separated year month date (ex: 2020,12): ").split(',')
+
+
+def user_input(*dates):
+    if len(dates) == 1 and str(dates[0]) != '':
+        if int(dates[0]) < 13:
+            return calendar.month(datetime.now().year, int(dates[0]))
+        else:
+            return "Choose a month between 01-12"
+    if len(dates) == 2:
+        if int(dates[1]) < 13:
+            return calendar.month(int(dates[0]), int(dates[1]))
+        else:
+            return "Choose a month between 01-12"
+    else:
+        print(
+            " You must enter a year and month. However, here is the current month and year:")
+        return(calendar.month(datetime.now().year, datetime.now().month))
+
